@@ -16,7 +16,7 @@ public class CC2_3 {
 		SinglyLinkedList linkedlist = new SinglyLinkedList(alist);
 		linkedlist.print();
 		for(int i = 0;i<a1.length-1;i++){
-			removeNode(linkedlist.getNode(0));
+			removeNode2(linkedlist.getNode(0));
 			linkedlist.print();			
 		}
 		
@@ -31,5 +31,10 @@ public class CC2_3 {
 		}
 		current.setValue(next.getValue());
 		current.setNext(null);
+	}
+	
+	public static void removeNode2(Node node){
+	    node.setValue( node.next.getValue());
+	    node.next = node.next.next;
 	}
 }

@@ -54,7 +54,7 @@ public class CC1_4 {
 		}
 		return false;
 	}
-	// without additional memory usage, O(nlog(n))
+	// without additional memory usage, sort s1 and s2 and then compare O(nlog(n))
 		public static boolean anagrams2(String s1, String s2) {
 			return true;
 		}
